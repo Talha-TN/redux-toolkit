@@ -1,8 +1,10 @@
 import "./App.css";
+import UserDetails from "./components/UserDetails";
 function App() {
   return (
     <>
-      <h2>redux toolkit</h2>
+      <h1>redux toolkit</h1>
+      <UserDetails/>
     </>
   );
 }
