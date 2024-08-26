@@ -1,11 +1,11 @@
-import "./App.css";
-import UserDetails from "./components/UserDetails";
+
+import React from 'react';
+import Counter from './components/Counter';
 function App() {
   return (
-    <>
-      <h1>redux toolkit</h1>
-      <UserDetails/>
-    </>
+    <div className="App">
+      <Counter /> {/* Render the Counter component */}
+    </div>
   );
 }
 

@@ -1,6 +1,9 @@
 import React from 'react'
 import DeleteAllUsers from './DeleteAllUsers'
+import { useDispatch } from 'react-redux'
+import { addUser } from './store/slices/UserSlice'
 const UserDetails = () => {
+  const dispatch = useDispatch()
   return (
     <div>
         <h3>list of user</h3>
@@ -9,9 +12,9 @@ const UserDetails = () => {
             <li>talha</li>
             <li>hamza</li>
             <li>ali</li>
-            <li>zarar</li>
+            <li >zarar</li>
         </ul>
-        <DeleteAllUsers/>
+        <DeleteAllUsers />
     </div>
   )
 }

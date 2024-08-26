@@ -2,7 +2,7 @@ import React from 'react'
 const DeleteAllUsers = () => {
   return (
     <div>
-        <button>DeleteAllUsers</button>
+        <button >DeleteAllUsers</button>
     </div>
   )
 }
