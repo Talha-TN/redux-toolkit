@@ -3,21 +3,19 @@ import React, { useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { fetchTodo, add } from "./ToDoSlice"; // Correct import
 import UseTitle from "../../assets/UseTitle";
-
 const TestingReduxThunk = () => {
   const [name, setName] = useState(""); // State to hold input value
   const dispatch = useDispatch();
-  UseTitle("redux Thunk")
-  const state = useSelector((state) => state.todoSlice);
+  UseTitle("redux Thunk") // hook for page  titlte
+  const state = useSelector((state) => state.todoSlice);// accces the state in todoSlice 
 
   const handleAdd = () => {
     if (name.trim() !== "") {
-      dispatch(add(name)); // Dispatch `add` with the input value
+      dispatch(add(name)); // Dispatch `add` with the input value which is store in name state
       setName(""); // Clear input after adding
     }
     
   };
-
   return (
     <div>
       {/* Render data */}
